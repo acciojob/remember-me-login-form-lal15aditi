@@ -22,7 +22,7 @@
             // Get input values
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            const rememberMe = document.getElementById('rememberMe').checked;
+            const rememberMe = document.getElementById('checkbox').checked;
 
             if (rememberMe) {
                 // Save details to local storage
