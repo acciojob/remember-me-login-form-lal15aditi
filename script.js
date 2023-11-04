@@ -2,12 +2,14 @@
 // Check for saved details in local storage
         const savedUsername = localStorage.getItem('username');
         const savedPassword = localStorage.getItem('password');
+			const existingUserButton = document.createElement('button');
+            existingUserButton.id = 'existing';
+            existingUserButton.textContent = 'Login as existing user';
+			existingUserButton.style.display = 'none';
 
         // If saved details exist, show "Login as existing user" button
         if (savedUsername && savedPassword) {
-            const existingUserButton = document.createElement('button');
-            existingUserButton.id = 'existing';
-            existingUserButton.textContent = 'Login as existing user';
+            existingUserButton.style.display = 'block';
             existingUserButton.addEventListener('click', () => {
                 alert(`Logged in as ${savedUsername}`);
             });
