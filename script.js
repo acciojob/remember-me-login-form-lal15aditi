@@ -5,11 +5,11 @@
 			const existingUserButton = document.createElement('button');
             existingUserButton.id = 'existing';
             existingUserButton.textContent = 'Login as existing user';
-			existingUserButton.style.display = 'hidden';
+			existingUserButton.style.visibility = 'hidden';
 
         // If saved details exist, show "Login as existing user" button
         if (savedUsername && savedPassword) {
-            existingUserButton.style.display = 'block';
+            existingUserButton.style.visibility = 'visible';
             existingUserButton.addEventListener('click', () => {
                 alert(`Logged in as ${savedUsername}`);
             });
