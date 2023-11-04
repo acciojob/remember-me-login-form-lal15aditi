@@ -12,7 +12,7 @@
                 alert(`Logged in as ${savedUsername}`);
             });
             document.body.appendChild(existingUserButton);
-			existingUserButton.style.display = "hidden";
+			// existingUserButton.style.display = "hidden";
         }
 
         // Handle form submission
